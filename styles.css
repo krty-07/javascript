@@ -1,25 +1,26 @@
 .container {
     max-width: 400px;
     margin: 10vh auto 0 auto;
+    text-align: center;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
 }
 
-.display {
+#display {
     line-height: 70px;
     height: 70px;
-    text-align: right;
+    text-align: center;
     padding: 16px 8px;
     font-size: 24px;
 }
 
-.button{
+.buttons{
     display: grid;
     border-bottom: 1px solid #ccc;
     border-left: 1px solid #ccc;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.button > div {
+.buttons > div {
     border-top: 1px solid #ccc;
     border-right: 1px solid #ccc;
 }
@@ -38,7 +39,7 @@
 }
 
 .button:hover {
-    background-color:black 0.5s;
-    color: white 0.5s;
-    transition: 0.5s ease-in-out;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    background-color: #333;
+    color: #fff;
 }
