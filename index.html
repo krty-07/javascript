@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        //strings
+        let x ="56";
+        let y ="89";
+        let z = x+y;
+        console.log(z);
+
+        //numbers
+        let digit1 = 2;
+        let digit2 = 5;
+
+        let result = digit1 + digit2;
+        console.log(result);
+
+        result = digit1 - digit2;
+        console.log(result);
+
+        result = digit1 * digit2
+        console.log(result)
+
+        result = digit1 ** digit2
+        console.log(result)
+
+        result = digit1 / digit2
+        console.log(result)
+
+        result = 7%5;
+
+
+        //booleen
+        let condition = false;
+        let age = 18;
+        let stringNum = "56";
+        let numNum = 56
+        console.log(stringNum==numNum)
+        //==
+        //===
+        //>
+        //>=
+        //<
+        //<=
+        //!=
+        //!==
+
+        if (age >= 18)
+    {
+        alert("welcome to adulthood")
+    }
+        else{
+            alert("Babyyyy")
+        }
+
+        //arrays
+
+
+
+
+
+        function changeText(){
+            document.getElementById("text").innerText="This is a paragraph"
+        }
+    </script>
+</head>
+<body>
+    <button onclick="changeText()">Click me</button>
+    <p id="text">this isn't a paragraph</p>
+</body>
+<button onclick ="changeText()">change text</button>
+</html>

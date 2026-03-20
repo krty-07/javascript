@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer>
+        function trackgrade()
+        {
+            let inputedtext = document.getElementById("inputedtext").value
+            console.log(inputedtext)
+            let output = ""
+            if(inputedtext == ""){
+            alert ("Input Grade");
+            }
+            else if(inputedtext>=70){
+            output = "A"
+            }
+            else if(inputedtext>=60){
+            output = "B"
+            }
+            else if(inputedtext>=50){
+            output = "C"
+            }
+            else if(inputedtext>=45){
+            output = "D"
+            }
+            else if(inputedtext>=40){
+            output = "E"
+            }
+            else{
+            output = "You Failed"
+            }
+            document.getElementById("output").innerText = output
+       }   
+    </script>
+</head>
+<body>
+    <input type="number" min="0" max="100" id="inputedtext">
+    <button onclick="trackgrade()">submit score</button>
+    <div id="output"></div>
+</body>
+</html>
